@@ -1,0 +1,208 @@
+[28-Mar-2023 03:19:44 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.17. in /home2/matchmakerlight/lightningspeedmatchmaker/vendor/composer/platform_check.php on line 24
+[28-Mar-2023 03:29:08 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.17. in /home2/matchmakerlight/lightningspeedmatchmaker/vendor/composer/platform_check.php on line 24
+[28-Mar-2023 03:32:06 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.17. in /home2/matchmakerlight/lightningspeedmatchmaker/vendor/composer/platform_check.php on line 24
+[21-Jul-2023 13:09:47 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.3.33. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/platform_check.php on line 24
+[21-Jul-2023 13:09:56 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.3.33. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/platform_check.php on line 24
+[21-Jul-2023 13:14:38 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:14:38 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:14:38 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:14:41 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:14:41 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:14:41 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:15:48 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:15:48 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:15:48 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:15:51 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:15:51 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:15:51 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:16:29 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:16:29 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:16:29 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:16:38 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:16:38 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:16:38 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891
+[21-Jul-2023 13:18:05 America/Chicago] PHP Warning:  include(/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:18:05 America/Chicago] PHP Warning:  include(): Failed opening '/home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/composer/ClassLoader.php on line 582
+[21-Jul-2023 13:18:05 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:889
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:891
+Stack trace:
+#0 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home2/matchmakerlight/match.lightningspeedmatchmaker.com/public/index.php(51): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 {main}
+  thrown in /home2/matchmakerlight/match.lightningspeedmatchmaker.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 891

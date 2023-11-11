@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.dashboard h3 {
+    margin: 0;
+}
+
+.dashboard {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.subscriptions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.my-card,
+.box {
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    background: linear-gradient(45deg, rgb(0, 110, 255), rgb(123, 200, 255));
+    transition: .5s ease;
+
+}
+
+.my-card:hover {
+    box-shadow: 0 0 10px -3px black;
+    transform: scale(1.03, 1.03);
+    transition: .2s ease;
+}
+
+/* PAGE LOADER */
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #0066ff;
+    top: 0px;
+    z-index: 9999;
+    -webkit-animation: loader .6s linear infinite;
+    -moz-animation: loader .6s linear infinite;
+    -o-animation: loader .6s linear infinite;
+    animation: loader .6s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        background: #0066ff
+    }
+
+    50% {
+        background: #fff;
+    }
+
+    100% {
+        background: #0066ff
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .dashboard,
+    .subscriptions {
+        display: block;
+    }
+
+    .my-card {
+        width: auto;
+        height: 150px;
+    }
+
+    .box {
+        width: auto;
+        min-height: max-content;
+    }
+}

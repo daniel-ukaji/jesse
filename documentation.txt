@@ -1,0 +1,54 @@
+<--------- documentation
+- Mail Controller
+
+This PHP code validates the input data received from a form using Laravel's validate method. The $request variable is an instance of Laravel's Illuminate\Http\Request class, which represents the HTTP request sent to the server. The validate method is called on the $request object to ensure that the required form fields are present and valid.
+The $data variable is then assigned the validated form data. It contains the values of the send_to, title, and content fields.
+Next, a match expression is used to determine which users should receive the message based on the value of the send_to field. 
+The match expression is a new feature in PHP 8 that allows you to write more concise switch statements. It takes an expression and compares it against several possible values, executing the code block associated with the first matching value.
+In this case, the match expression takes the value of the send_to field and compares it against the values "verified", "unverified", and "all". Depending on the value of send_to, it retrieves a list of users using the appropriate Laravel Eloquent query. If the value of send_to is not one of the defined values, it retrieves all users by default.
+Finally, the $users variable contains the list of users that should receive the message based on the value of send_to. It is now ready to be used to send the message to the selected users.
+
+- Matching Algorithm
+    1. Load every member to the user who:
+        - share the same sexual orientation as the user i.e, gender requirement, and same sexual requirement.
+        - seek the same kind of relationship
+        - verified email
+
+    2. Percentages are computed on the frontend with raw PHP.
+    3. Each match criteria is 6.25% of all matching criteria
+-
+
+
+
+<--------- todo
+- Compare Mail controller on server with local
+
+Turn to check box on Seeks form
+1. Education
+2. Ethnicity
+3. Religion
+4. Zodiac 
+
+Added N/A on seeks form
+1. Body type
+2. Hair color
+3. Eye color
+4. Physical activity
+5. Education
+6. what they want
+7. Ethnicity
+8. Religion
+9. zodiac
+10. height
+
+ADD TO NEWSLETTER class
+
+When sending content from an HTML textarea in Laravel, the newline characters (\n) are typically not interpreted as line breaks in HTML. To ensure that your paragraphs are properly formatted, you can use the nl2br() function in Laravel to convert the newline characters to HTML line breaks (<br> tags). Here's an example:
+
+CODE
+php
+$content = nl2br($request->input('textarea_content'));
+
+In the above code, textarea_content is the name of your textarea input field. The nl2br() function converts the newline characters to <br> tags, 
+allowing your paragraphs to be displayed correctly when sent as part of the email template.
+After converting the content using nl2br(), you can pass it to your email template and it should preserve the line breaks and paragraph formatting.
